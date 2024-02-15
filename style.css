@@ -20,11 +20,14 @@ img{
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -20px;
-    margin-right: -20px;
+    /* margin-left: -20px;
+    margin-right: -20px; */
 }
 .col{
     padding: 0 20px;
+}
+.flex{
+    display: flex;
 }
 /*------------------
     BUTTON
@@ -85,13 +88,17 @@ nav ul li a{
 .intro .grow{
     flex-grow: 1;
 }
+.intro .row{
+    margin-bottom: 25px;
+}
 .card{
     width: 100%;
-    display: flex;
     background-color: #B5DDFF;
     border-radius: 20px;
     padding-top: 30px;
     padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
 }
 .card .col-50{
     width: 50%;
@@ -100,7 +107,7 @@ nav ul li a{
     color: #0084FD;
     padding-bottom: 25px;
 }
-.text-col p{
+.text-col p, .small-card p {
     color: #5A6E7F;
     padding-bottom: 30px;
     line-height: 30px;
@@ -115,6 +122,18 @@ nav ul li a{
     padding-top: 25px;
     max-width: 70%;
 }
+.small-card{
+    text-align: center;
+    height: 100%; 
+}
+.small-card i{
+    font-size: 65px;
+    color: #0084FD;
+}
+.small-card h2{
+    color: #0084FD;
+    padding: 20px 0;
+}
 /*------------------
     RESPONSIVE
  ---------------- */
@@ -125,5 +144,17 @@ nav ul li a{
     }
     header nav{
         display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .intro .col{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .intro .flex{
+        flex-direction: column;
+    }
+    .intro .col-50{
+        width: 100%;
     }
 }
