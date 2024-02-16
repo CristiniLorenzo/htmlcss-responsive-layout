@@ -150,9 +150,15 @@ nav ul li a{
     background-color: #9792E4;
     color: #fff;   
 }
+.hero .container{
+    max-width: 1000px;
+}
 .hero .row{
     align-items: flex-end;
     padding-bottom: 50px;
+}
+.hero .col-small{
+    padding-top: 300px;
 }
 .hero img{
     padding: 100px 0;
@@ -166,16 +172,21 @@ nav ul li a{
 }
 .hero .card{
     background-color: #fff;
-    border-radius: 5ss0px;
+    border-radius: 50px;
     color: #000;
     text-align: center;
     height: 30%;
+    padding: 25px 25px;
 }
 .hero .card p{
     font-style: italic;
+    padding-bottom: 20px;
+}
+.hero .card h2{
+    font-size: 30px;
 }
 .hero .card img{
-    padding: 0;
+    padding: 0px 55px;
     
 }
 .hero button{
