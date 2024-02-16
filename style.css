@@ -26,6 +26,9 @@ img{
 .col{
     padding: 0 20px;
 }
+.col-50{
+    width: 50%;
+}
 .flex{
     display: flex;
 }
@@ -46,6 +49,11 @@ img{
     color: #fff;
     font-weight: 600;
     font-size: 16px;
+}
+.button-purple{
+    background-color: #9792E4;
+    color: #fff;
+    border-radius: 20px;
 }
  /*------------------
     END OF BUTTON
@@ -100,9 +108,7 @@ nav ul li a{
     padding-right: 20px;
     height: 100%;
 }
-.card .col-50{
-    width: 50%;
-}
+
 .text-col h2{
     color: #0084FD;
     padding-bottom: 25px;
@@ -135,6 +141,54 @@ nav ul li a{
     padding: 20px 0;
 }
 /*------------------
+    END OF INTRO
+ ---------------- */
+ /*------------------
+    HERO
+ ---------------- */
+.hero{
+    background-color: #9792E4;
+    color: #fff;   
+}
+.hero .row{
+    align-items: flex-end;
+    padding-bottom: 50px;
+}
+.hero img{
+    padding: 100px 0;
+}
+.hero h2{
+    padding: 30px 0;
+    font-size: 42px;
+}
+.hero p{
+    line-height: 25px;
+}
+.hero .card{
+    background-color: #fff;
+    border-radius: 5ss0px;
+    color: #000;
+    text-align: center;
+    height: 30%;
+}
+.hero .card p{
+    font-style: italic;
+}
+.hero .card img{
+    padding: 0;
+    
+}
+.hero button{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: none;
+    color: #000;
+    font-size: 20px;
+}
+
+
+/*------------------
     RESPONSIVE
  ---------------- */
 @media screen and (max-width: 992px){
@@ -144,6 +198,12 @@ nav ul li a{
     }
     header nav{
         display: none;
+    }
+    .intro .flex{
+        flex-direction: column;
+    }
+    .intro .col-50{
+        width: 100%;
     }
 }
 @media screen and (max-width: 768px){
