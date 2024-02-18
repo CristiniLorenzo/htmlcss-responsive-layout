@@ -20,6 +20,7 @@ img{
 .row {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     /* margin-left: -20px;
     margin-right: -20px; */
 }
@@ -34,6 +35,9 @@ img{
 }
 .col-80{
     width: 80%;
+}
+.grow{
+    flex-grow: 1;
 }
 .flex{
     display: flex;
@@ -60,6 +64,7 @@ img{
     background-color: #9792E4;
     color: #fff;
     border-radius: 20px;
+    border: none;
 }
  /*------------------
     END OF BUTTON
@@ -99,9 +104,7 @@ nav ul li a{
 .intro .col{
     width: calc(100% / 3);
 }
-.intro .grow{
-    flex-grow: 1;
-}
+
 .intro .row{
     margin-bottom: 25px;
 }
@@ -149,7 +152,7 @@ nav ul li a{
 /*------------------
     END OF INTRO
  ---------------- */
- /*------------------
+/*------------------
     HERO
  ---------------- */
 .hero{
@@ -203,7 +206,7 @@ nav ul li a{
 /*------------------
     END OF HERO
  ---------------- */
- /*------------------
+/*------------------
     TESTIMONIALS
  ---------------- */
 .testimonials-title{
@@ -239,6 +242,95 @@ nav ul li a{
 .testimonials-card .card-purple{
     margin-top: 30px;
 }
+/*------------------
+    END OF TESTIMONIALS
+ ---------------- */
+/*------------------
+    BENEFITS
+ ---------------- */
+.benefit{
+    background-color: #9792E4;
+    margin-top: 50px;
+}
+.benefit-title{
+    justify-content: center;
+    padding: 30px 0;
+    color: #fff;
+    font-size: 25px;
+}
+.benefit .col{
+    width: calc(100% / 3);
+    margin-bottom: 25px;
+}
+.benefit-card{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 15px 30px;
+}
+.benefit-card *{
+    margin-top: 15px;
+}
+.benefit-card h2{
+    font-size: 50px;
+    color: #9792E4;
+}
+.benefit-card h3{
+    color: #9792E4;
+}
+.benefit-card p{
+    color: #5A6E7F;
+    line-height: 25px;
+}
+.benefit-card button{
+    padding: 10px 40px;
+}
+/*------------------
+    END OF BENEFITS
+ ---------------- */
+/*------------------
+    ABOUT US
+ ---------------- */
+.about-us .col{
+    width: calc(100% / 3);
+    position: relative;
+}
+.about-us .container{
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.about-us .grow h2{
+    font-size: 70px;
+    color: #9792E4;
+}
+.about-us .grow *{
+    padding: 20px 0;
+    padding-right: 35px;
+}
+.about-us .grow p{
+    line-height: 40px;
+    font-size: 18px;
+}
+.about-us img{
+    border-radius: 50%;
+    max-width: 80%;
+    padding-top: 20px;
+}
+.about-us p i{
+    position: absolute;
+    top: 0;
+    right: 80px;
+    font-size: 90px;
+    color: #9792E4;
+}
+.about-us h3{
+    font-size: 35px;
+    color: #9792E4;
+    padding: 20px 0;
+}
+.about-us button{
+    padding: 10px;
+    width: 60%;
+}
 
 /*------------------
     RESPONSIVE
@@ -256,6 +348,12 @@ nav ul li a{
     }
     .col-50{
         width: 100%;
+    }
+    .testimonials{
+        padding: 0 40px;
+    }
+    .benefit .col{
+        width: 50%;
     }
 }
 @media screen and (max-width: 768px){
@@ -275,4 +373,11 @@ nav ul li a{
     .card-purple .col-20, .card-purple .col-80{
         width: 100%;
     }
+    .benefit .col{
+        width: 100%;
+    }
+    .about-us .col{
+        width: 100%;
+    }
+    
 }
