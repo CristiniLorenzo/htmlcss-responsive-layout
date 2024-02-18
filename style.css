@@ -347,7 +347,7 @@ nav ul li a{
     padding: 30px 0;
 }
 .get-started h2{
-    font-size: 30px;
+    font-size: 40px;
 }
 .get-started h1{
     font-size: 70px;
@@ -364,8 +364,26 @@ nav ul li a{
 .get-started * :not(button){
     padding: 14px 0;
 }
-
-
+ /*------------------
+    END OF GET STARTED
+ ---------------- */
+  /*------------------
+    FOOTER
+ ---------------- */
+footer{
+    background-color: #333333;
+    color: #fff;
+}
+footer .container{
+    max-width: 460px;
+    text-align: center;
+}
+footer .container > *{
+    padding: 40px 0;
+}
+footer a{
+    color: #9792E4;
+}
 /*------------------
     RESPONSIVE
  ---------------- */
